@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>736918736836-s0iqgg97mf36ulroeis1lrpdj79h1mh4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.736918736836-s0iqgg97mf36ulroeis1lrpdj79h1mh4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>736918736836-ehq4k01hlp3597pksieelnqcc4t8trt6.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCNxJsvFmup6rS2HMKYOdQN49TPuG9q3_g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>736918736836</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flutterflow.bananatraders</string>
+	<key>PROJECT_ID</key>
+	<string>banana-traders</string>
+	<key>STORAGE_BUCKET</key>
+	<string>banana-traders.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:736918736836:ios:90ed7042c5f4f2fa685e91</string>
+</dict>
+</plist>

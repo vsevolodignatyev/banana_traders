@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "736918736836",
+    "project_id": "banana-traders",
+    "storage_bucket": "banana-traders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736918736836:android:ba3bbe6e09776db7685e91",
+        "android_client_info": {
+          "package_name": "com.flutterflow.bananatraders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736918736836-ehq4k01hlp3597pksieelnqcc4t8trt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.bananatraders",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "736918736836-p9qdkohkdo04ojtehhrgvl34oeq3ms3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Hkln1rY9izvZf7bOz5Z4_958iiMSyYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736918736836-p9qdkohkdo04ojtehhrgvl34oeq3ms3t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736918736836-s0iqgg97mf36ulroeis1lrpdj79h1mh4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.bananatraders"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
