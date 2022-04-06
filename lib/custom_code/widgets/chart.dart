@@ -97,11 +97,7 @@ class Chart extends StatefulWidget {
   final double value9;
   final double value10;
   final double value11;
-<<<<<<< HEAD
-  final double values;
-=======
   final List<double> values;
->>>>>>> 20419203d23582631bdfdabfb9ad089c080001e1
 
   @override
   _ChartState createState() => _ChartState();
