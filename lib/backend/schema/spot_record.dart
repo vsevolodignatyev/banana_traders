@@ -14,28 +14,27 @@ abstract class SpotRecord implements Built<SpotRecord, SpotRecordBuilder> {
   DateTime get date;
 
   @nullable
-  @BuiltValueField(wireName: 'Spot')
-  int get spot;
+  double get spot;
 
   @nullable
-  int get spotNorte;
+  double get spotNorte;
 
   @nullable
-  int get spotCentro;
+  double get spotCentro;
 
   @nullable
   @BuiltValueField(wireName: 'SpotSur')
-  int get spotSur;
+  double get spotSur;
 
   @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
   static void _initializeBuilder(SpotRecordBuilder builder) => builder
-    ..spot = 0
-    ..spotNorte = 0
-    ..spotCentro = 0
-    ..spotSur = 0;
+    ..spot = 0.0
+    ..spotNorte = 0.0
+    ..spotCentro = 0.0
+    ..spotSur = 0.0;
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('spot');
@@ -59,10 +58,10 @@ abstract class SpotRecord implements Built<SpotRecord, SpotRecordBuilder> {
 
 Map<String, dynamic> createSpotRecordData({
   DateTime date,
-  int spot,
-  int spotNorte,
-  int spotCentro,
-  int spotSur,
+  double spot,
+  double spotNorte,
+  double spotCentro,
+  double spotSur,
 }) =>
     serializers.toFirestore(
         SpotRecord.serializer,

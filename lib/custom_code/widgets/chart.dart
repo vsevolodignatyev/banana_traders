@@ -5,13 +5,6 @@ import '../../flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
 import 'package:flutter/material.dart';
 // Begin custom widget code
-// Automatic FlutterFlow imports
-import '../../backend/backend.dart';
-import '../../flutter_flow/flutter_flow_theme.dart';
-import '../../flutter_flow/flutter_flow_util.dart';
-import 'index.dart'; // Imports other custom widgets
-import 'package:flutter/material.dart';
-// Begin custom widget code
 import 'package:fl_chart/fl_chart.dart';
 
 class Chart extends StatefulWidget {
@@ -59,6 +52,7 @@ class Chart extends StatefulWidget {
     this.value9,
     this.value10,
     this.value11,
+    this.values,
   }) : super(key: key);
 
   final double width;
@@ -103,6 +97,7 @@ class Chart extends StatefulWidget {
   final double value9;
   final double value10;
   final double value11;
+  final List<double> values;
 
   @override
   _ChartState createState() => _ChartState();
