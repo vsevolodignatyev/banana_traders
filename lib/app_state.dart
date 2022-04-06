@@ -18,7 +18,7 @@ class FFAppState {
 
   SharedPreferences prefs;
 
-  String spot = '1 mes';
+  String spot = '1 sem';
 
   String spotNorte = '1 sem';
 
