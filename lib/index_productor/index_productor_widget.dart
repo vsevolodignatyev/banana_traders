@@ -367,7 +367,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                         stream: querySpotRecord(
                           queryBuilder: (spotRecord) =>
                               spotRecord.orderBy('Date', descending: true),
-                          limit: 10,
+                          limit: 7,
                         ),
                         builder: (context, snapshot) {
                           // Customize what your widget looks like when it's loading.

@@ -5,6 +5,13 @@ import '../../flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
 import 'package:flutter/material.dart';
 // Begin custom widget code
+// Automatic FlutterFlow imports
+import '../../backend/backend.dart';
+import '../../flutter_flow/flutter_flow_theme.dart';
+import '../../flutter_flow/flutter_flow_util.dart';
+import 'index.dart'; // Imports other custom widgets
+import 'package:flutter/material.dart';
+// Begin custom widget code
 import 'package:fl_chart/fl_chart.dart';
 
 class Chart extends StatefulWidget {
@@ -99,16 +106,16 @@ class _ChartState extends State<Chart> {
         show: true,
         rightTitles: SideTitles(showTitles: false),
         topTitles: SideTitles(showTitles: false),
+        leftTitles: SideTitles(showTitles: false),
         bottomTitles: SideTitles(
           showTitles: true,
           reservedSize: 22,
           interval: 1,
           getTextStyles: (context, value) =>
               TextStyle(color: widget.bottomTitlesColor, fontSize: 12),
-          getTitles: (value) => widget.bottomTitles[value.toInt() + 1],
+          getTitles: (value) => widget.bottomTitles[value.toInt()],
           margin: 8,
         ),
-        leftTitles: SideTitles(showTitles: false),
       ),
       borderData: FlBorderData(
           show: false,
@@ -119,7 +126,9 @@ class _ChartState extends State<Chart> {
       maxY: widget.maxY,
       lineBarsData: [
         LineChartBarData(
-          spots: widget.values.map((value, index) => FlSpot(index, value)),
+          spots: widget.values.asMap().entries.map((e) {
+            return FlSpot(e.key.toDouble(), e.value);
+          }).toList(),
           isCurved: true,
           colors: gradientColors,
           barWidth: 2,
