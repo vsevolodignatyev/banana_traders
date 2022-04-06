@@ -10,14 +10,32 @@ abstract class SpotRecord implements Built<SpotRecord, SpotRecordBuilder> {
   static Serializer<SpotRecord> get serializer => _$spotRecordSerializer;
 
   @nullable
-  BuiltList<int> get price;
+  @BuiltValueField(wireName: 'Date')
+  DateTime get date;
+
+  @nullable
+  @BuiltValueField(wireName: 'Spot')
+  int get spot;
+
+  @nullable
+  int get spotNorte;
+
+  @nullable
+  int get spotCentro;
+
+  @nullable
+  @BuiltValueField(wireName: 'SpotSur')
+  int get spotSur;
 
   @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
-  static void _initializeBuilder(SpotRecordBuilder builder) =>
-      builder..price = ListBuilder();
+  static void _initializeBuilder(SpotRecordBuilder builder) => builder
+    ..spot = 0
+    ..spotNorte = 0
+    ..spotCentro = 0
+    ..spotSur = 0;
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('spot');
@@ -39,5 +57,18 @@ abstract class SpotRecord implements Built<SpotRecord, SpotRecordBuilder> {
           {...mapFromFirestore(data), kDocumentReferenceField: reference});
 }
 
-Map<String, dynamic> createSpotRecordData() => serializers.toFirestore(
-    SpotRecord.serializer, SpotRecord((s) => s..price = null));
+Map<String, dynamic> createSpotRecordData({
+  DateTime date,
+  int spot,
+  int spotNorte,
+  int spotCentro,
+  int spotSur,
+}) =>
+    serializers.toFirestore(
+        SpotRecord.serializer,
+        SpotRecord((s) => s
+          ..date = date
+          ..spot = spot
+          ..spotNorte = spotNorte
+          ..spotCentro = spotCentro
+          ..spotSur = spotSur));

@@ -5,6 +5,13 @@ import '../../flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
 import 'package:flutter/material.dart';
 // Begin custom widget code
+// Automatic FlutterFlow imports
+import '../../backend/backend.dart';
+import '../../flutter_flow/flutter_flow_theme.dart';
+import '../../flutter_flow/flutter_flow_util.dart';
+import 'index.dart'; // Imports other custom widgets
+import 'package:flutter/material.dart';
+// Begin custom widget code
 import 'package:fl_chart/fl_chart.dart';
 
 class Chart extends StatefulWidget {

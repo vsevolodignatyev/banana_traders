@@ -1,3 +1,4 @@
+import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -362,37 +363,60 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       ),
                     ),
                     if ((FFAppState().spot) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                        bottomTitle2: '11/03',
-                        bottomTitle4: '13/03',
-                        bottomTitle6: '15/03',
-                        bottomTitle8: '17/03',
-                        bottomTitle10: '19/03',
-                        value0: 2.0,
-                        value1: 3.0,
-                        value2: 1.0,
-                        value3: 4.0,
-                        value4: 2.0,
-                        value5: 5.0,
-                        value6: 2.0,
-                        value7: 3.0,
-                        value8: 2.0,
-                        value9: 1.0,
-                        value10: 5.0,
-                        value11: 6.0,
+                      StreamBuilder<List<SpotRecord>>(
+                        stream: querySpotRecord(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 10,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            gradientColor1:
+                                FlutterFlowTheme.of(context).primaryColor,
+                            gradientColor2:
+                                FlutterFlowTheme.of(context).secondaryColor,
+                            minY: 0.0,
+                            maxY: 6.0,
+                            verticalLineColor: Colors.black,
+                            horizontalLineColor: Colors.black,
+                            backgroundColor: Colors.white,
+                            bottomTitlesColor: Color(0xFF858585),
+                            leftTitlesColor: Color(0xFF858585),
+                            bottomTitle2: '11/03',
+                            bottomTitle4: '13/03',
+                            bottomTitle6: '15/03',
+                            bottomTitle8: '17/03',
+                            bottomTitle10: '19/03',
+                            value0: 2.0,
+                            value1: 3.0,
+                            value2: 1.0,
+                            value3: 4.0,
+                            value4: 2.0,
+                            value5: 5.0,
+                            value6: 2.0,
+                            value7: 3.0,
+                            value8: 2.0,
+                            value9: 1.0,
+                            value10: 5.0,
+                            value11: 6.0,
+                          );
+                        },
                       ),
                     if ((FFAppState().spot) == '1 año')
                       custom_widgets.Chart(
