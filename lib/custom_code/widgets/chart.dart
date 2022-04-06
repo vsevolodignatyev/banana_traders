@@ -23,36 +23,8 @@ class Chart extends StatefulWidget {
     this.backgroundColor,
     this.bottomTitlesColor,
     this.leftTitlesColor,
-    this.bottomTitle1,
-    this.bottomTitle2,
-    this.bottomTitle3,
-    this.bottomTitle4,
-    this.bottomTitle5,
-    this.bottomTitle6,
-    this.bottomTitle7,
-    this.bottomTitle8,
-    this.bottomTitle9,
-    this.bottomTitle10,
-    this.bottomTitle11,
-    this.leftTitle1,
-    this.leftTitle2,
-    this.leftTitle3,
-    this.leftTitle4,
-    this.leftTitle5,
-    this.leftTitle6,
-    this.value0,
-    this.value1,
-    this.value2,
-    this.value3,
-    this.value4,
-    this.value5,
-    this.value6,
-    this.value7,
-    this.value8,
-    this.value9,
-    this.value10,
-    this.value11,
     this.values,
+    this.bottomTitles,
   }) : super(key: key);
 
   final double width;
@@ -68,36 +40,8 @@ class Chart extends StatefulWidget {
   final Color backgroundColor;
   final Color bottomTitlesColor;
   final Color leftTitlesColor;
-  final String bottomTitle1;
-  final String bottomTitle2;
-  final String bottomTitle3;
-  final String bottomTitle4;
-  final String bottomTitle5;
-  final String bottomTitle6;
-  final String bottomTitle7;
-  final String bottomTitle8;
-  final String bottomTitle9;
-  final String bottomTitle10;
-  final String bottomTitle11;
-  final String leftTitle1;
-  final String leftTitle2;
-  final String leftTitle3;
-  final String leftTitle4;
-  final String leftTitle5;
-  final String leftTitle6;
-  final double value0;
-  final double value1;
-  final double value2;
-  final double value3;
-  final double value4;
-  final double value5;
-  final double value6;
-  final double value7;
-  final double value8;
-  final double value9;
-  final double value10;
-  final double value11;
   final List<double> values;
+  final List<String> bottomTitles;
 
   @override
   _ChartState createState() => _ChartState();
@@ -161,33 +105,7 @@ class _ChartState extends State<Chart> {
           interval: 1,
           getTextStyles: (context, value) =>
               TextStyle(color: widget.bottomTitlesColor, fontSize: 12),
-          getTitles: (value) {
-            switch (value.toInt()) {
-              case 1:
-                return widget.bottomTitle1;
-              case 2:
-                return widget.bottomTitle2;
-              case 3:
-                return widget.bottomTitle3;
-              case 4:
-                return widget.bottomTitle4;
-              case 5:
-                return widget.bottomTitle5;
-              case 6:
-                return widget.bottomTitle6;
-              case 7:
-                return widget.bottomTitle7;
-              case 8:
-                return widget.bottomTitle8;
-              case 9:
-                return widget.bottomTitle9;
-              case 10:
-                return widget.bottomTitle10;
-              case 11:
-                return widget.bottomTitle11;
-            }
-            return '';
-          },
+          getTitles: (value) => widget.bottomTitles[value.toInt() + 1],
           margin: 8,
         ),
         leftTitles: SideTitles(showTitles: false),
@@ -201,20 +119,7 @@ class _ChartState extends State<Chart> {
       maxY: widget.maxY,
       lineBarsData: [
         LineChartBarData(
-          spots: [
-            FlSpot(0, widget.value0),
-            FlSpot(1, widget.value1),
-            FlSpot(2, widget.value2),
-            FlSpot(3, widget.value3),
-            FlSpot(4, widget.value4),
-            FlSpot(5, widget.value5),
-            FlSpot(6, widget.value6),
-            FlSpot(7, widget.value7),
-            FlSpot(8, widget.value8),
-            FlSpot(9, widget.value9),
-            FlSpot(10, widget.value10),
-            FlSpot(11, widget.value11),
-          ],
+          spots: widget.values.map((value, index) => FlSpot(index, value)),
           isCurved: true,
           colors: gradientColors,
           barWidth: 2,
