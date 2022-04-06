@@ -415,6 +415,8 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                             value9: 1.0,
                             value10: 5.0,
                             value11: 6.0,
+                            values:
+                                chartSpotRecordList.map((e) => e.spot).toList(),
                           );
                         },
                       ),
