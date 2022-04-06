@@ -59,6 +59,7 @@ class Chart extends StatefulWidget {
     this.value9,
     this.value10,
     this.value11,
+    this.values,
   }) : super(key: key);
 
   final double width;
@@ -103,6 +104,7 @@ class Chart extends StatefulWidget {
   final double value9;
   final double value10;
   final double value11;
+  final double values;
 
   @override
   _ChartState createState() => _ChartState();
