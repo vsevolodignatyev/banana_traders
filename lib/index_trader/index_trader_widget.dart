@@ -331,3074 +331,6 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
                             child: Icon(
-                              FFIcons.ksubtract2,
-                              color: FlutterFlowTheme.of(context).primaryColor,
-                              size: 48,
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'SPOT',
-                                style: FlutterFlowTheme.of(context).title3,
-                              ),
-                              Text(
-                                'Promedio semanal: \$3',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    if ((FFAppState().spot) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spot) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spot) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spot) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spot) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spot) == '1 sem')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 60,
-                                      constraints: BoxConstraints(
-                                        maxWidth:
-                                            MediaQuery.of(context).size.width *
-                                                0.35,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                        shape: BoxShape.rectangle,
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '1/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 100,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '2/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 41,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '3/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 35,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '4/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 30,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '5/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != 'Todo')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(
-                                              () => FFAppState().spot = 'Todo');
-                                        },
-                                        child: Text(
-                                          'Todo',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == 'Todo')
-                                      Text(
-                                        'Todo',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spot) == 'Todo')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != '1 año')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spot = '1 año');
-                                        },
-                                        child: Text(
-                                          '1 año',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == '1 año')
-                                      Text(
-                                        '1 año',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spot) == '1 año')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != '6 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spot = '6 mes');
-                                        },
-                                        child: Text(
-                                          '6 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == '6 mes')
-                                      Text(
-                                        '6 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spot) == '6 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != '3 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spot = '3 mes');
-                                        },
-                                        child: Text(
-                                          '3 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == '3 mes')
-                                      Text(
-                                        '3 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spot) == '3 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: InkWell(
-                                  onTap: () async {
-                                    setState(() => FFAppState().spot = '1 mes');
-                                  },
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      if ((FFAppState().spot) != '1 mes')
-                                        InkWell(
-                                          onTap: () async {
-                                            setState(() =>
-                                                FFAppState().spot = '1 mes');
-                                          },
-                                          child: Text(
-                                            '1 mes',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily:
-                                                      'Akzidenz Grotesk Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryColor,
-                                                  useGoogleFonts: false,
-                                                ),
-                                          ),
-                                        ),
-                                      if ((FFAppState().spot) == '1 mes')
-                                        Text(
-                                          '1 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if ((FFAppState().spot) == '1 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != '1 sem')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spot = '1 sem');
-                                        },
-                                        child: Text(
-                                          '1 sem',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == '1 sem')
-                                      Text(
-                                        '1 sem',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spot) == '1 sem')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 1,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                            child: Icon(
-                              FFIcons.knorte,
-                              color: Color(0xFF4499E8),
-                              size: 48,
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'SPOT • Norte',
-                                style: FlutterFlowTheme.of(context).title3,
-                              ),
-                              Text(
-                                'Promedio semanal: \$3',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    if ((FFAppState().spotNorte) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotNorte) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotNorte) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotNorte) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotNorte) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotNorte) == '1 sem')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 60,
-                                      constraints: BoxConstraints(
-                                        maxWidth:
-                                            MediaQuery.of(context).size.width *
-                                                0.35,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                        shape: BoxShape.rectangle,
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '1/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 100,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '2/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 41,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '3/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 35,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '4/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 30,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '5/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spot) != 'Todo')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotNorte = 'Todo');
-                                        },
-                                        child: Text(
-                                          'Todo',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spot) == 'Todo')
-                                      Text(
-                                        'Todo',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == 'Todo')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotNorte) != '1 año')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotNorte = '1 año');
-                                        },
-                                        child: Text(
-                                          '1 año',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotNorte) == '1 año')
-                                      Text(
-                                        '1 año',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == '1 año')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotNorte) != '6 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotNorte = '6 mes');
-                                        },
-                                        child: Text(
-                                          '6 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotNorte) == '6 mes')
-                                      Text(
-                                        '6 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == '6 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotNorte) != '3 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotNorte = '3 mes');
-                                        },
-                                        child: Text(
-                                          '3 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotNorte) == '3 mes')
-                                      Text(
-                                        '3 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == '3 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: InkWell(
-                                  onTap: () async {
-                                    setState(() => FFAppState().spot = '1 mes');
-                                  },
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      if ((FFAppState().spotNorte) != '1 mes')
-                                        InkWell(
-                                          onTap: () async {
-                                            setState(() => FFAppState()
-                                                .spotNorte = '1 mes');
-                                          },
-                                          child: Text(
-                                            '1 mes',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily:
-                                                      'Akzidenz Grotesk Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryColor,
-                                                  useGoogleFonts: false,
-                                                ),
-                                          ),
-                                        ),
-                                      if ((FFAppState().spotNorte) == '1 mes')
-                                        Text(
-                                          '1 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == '1 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotNorte) != '1 sem')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotNorte = '1 sem');
-                                        },
-                                        child: Text(
-                                          '1 sem',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotNorte) == '1 sem')
-                                      Text(
-                                        '1 sem',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotNorte) == '1 sem')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 1,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                            child: Icon(
-                              FFIcons.kcentro,
-                              color: FlutterFlowTheme.of(context).primaryColor,
-                              size: 48,
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'SPOT • Centro',
-                                style: FlutterFlowTheme.of(context).title3,
-                              ),
-                              Text(
-                                'Promedio semanal: \$3',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    if ((FFAppState().spotCentro) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotCentro) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotCentro) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotCentro) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotCentro) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotCentro) == '1 sem')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 60,
-                                      constraints: BoxConstraints(
-                                        maxWidth:
-                                            MediaQuery.of(context).size.width *
-                                                0.35,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                        shape: BoxShape.rectangle,
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '1/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 100,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '2/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 41,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '3/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 35,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '4/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 30,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '5/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotCentro) != 'Todo')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotCentro = 'Todo');
-                                        },
-                                        child: Text(
-                                          'Todo',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotCentro) == 'Todo')
-                                      Text(
-                                        'Todo',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == 'Todo')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotCentro) != '1 año')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() => FFAppState()
-                                              .spotCentro = '1 año');
-                                        },
-                                        child: Text(
-                                          '1 año',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotCentro) == '1 año')
-                                      Text(
-                                        '1 año',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == '1 año')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotCentro) != '6 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() => FFAppState()
-                                              .spotCentro = '6 mes');
-                                        },
-                                        child: Text(
-                                          '6 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotCentro) == '6 mes')
-                                      Text(
-                                        '6 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == '6 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotCentro) != '3 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() => FFAppState()
-                                              .spotCentro = '3 mes');
-                                        },
-                                        child: Text(
-                                          '3 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotCentro) == '3 mes')
-                                      Text(
-                                        '3 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == '3 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: InkWell(
-                                  onTap: () async {
-                                    setState(() => FFAppState().spot = '1 mes');
-                                  },
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      if ((FFAppState().spotCentro) != '1 mes')
-                                        InkWell(
-                                          onTap: () async {
-                                            setState(() => FFAppState()
-                                                .spotCentro = '1 mes');
-                                          },
-                                          child: Text(
-                                            '1 mes',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily:
-                                                      'Akzidenz Grotesk Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryColor,
-                                                  useGoogleFonts: false,
-                                                ),
-                                          ),
-                                        ),
-                                      if ((FFAppState().spotCentro) == '1 mes')
-                                        Text(
-                                          '1 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == '1 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotCentro) != '1 sem')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() => FFAppState()
-                                              .spotCentro = '1 sem');
-                                        },
-                                        child: Text(
-                                          '1 sem',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotCentro) == '1 sem')
-                                      Text(
-                                        '1 sem',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotCentro) == '1 sem')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 1,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                            child: Icon(
-                              FFIcons.ksubtract11,
-                              color: Color(0xFFD95644),
-                              size: 48,
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'SPOT • Sur',
-                                style: FlutterFlowTheme.of(context).title3,
-                              ),
-                              Text(
-                                'Promedio semanal: \$3',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    if ((FFAppState().spotSur) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotSur) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotSur) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotSur) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotSur) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
-                      ),
-                    if ((FFAppState().spotSur) == '1 sem')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 60,
-                                      constraints: BoxConstraints(
-                                        maxWidth:
-                                            MediaQuery.of(context).size.width *
-                                                0.35,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                        shape: BoxShape.rectangle,
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '1/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 100,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '2/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 41,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '3/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 35,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '4/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      height: 30,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 6, 0, 0),
-                                      child: Text(
-                                        '5/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText2
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color: Color(0xFF858585),
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotSur) != 'Todo')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotSur = 'Todo');
-                                        },
-                                        child: Text(
-                                          'Todo',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotSur) == 'Todo')
-                                      Text(
-                                        'Todo',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == 'Todo')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotSur) != '1 año')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotSur = '1 año');
-                                        },
-                                        child: Text(
-                                          '1 año',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotSur) == '1 año')
-                                      Text(
-                                        '1 año',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == '1 año')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotSur) != '6 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotSur = '6 mes');
-                                        },
-                                        child: Text(
-                                          '6 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotSur) == '6 mes')
-                                      Text(
-                                        '6 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == '6 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotSur) != '3 mes')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotSur = '3 mes');
-                                        },
-                                        child: Text(
-                                          '3 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotSur) == '3 mes')
-                                      Text(
-                                        '3 mes',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == '3 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: InkWell(
-                                  onTap: () async {
-                                    setState(() => FFAppState().spot = '1 mes');
-                                  },
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      if ((FFAppState().spotSur) != '1 mes')
-                                        InkWell(
-                                          onTap: () async {
-                                            setState(() =>
-                                                FFAppState().spotSur = '1 mes');
-                                          },
-                                          child: Text(
-                                            '1 mes',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily:
-                                                      'Akzidenz Grotesk Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryColor,
-                                                  useGoogleFonts: false,
-                                                ),
-                                          ),
-                                        ),
-                                      if ((FFAppState().spotSur) == '1 mes')
-                                        Text(
-                                          '1 mes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == '1 mes')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    if ((FFAppState().spotSur) != '1 sem')
-                                      InkWell(
-                                        onTap: () async {
-                                          setState(() =>
-                                              FFAppState().spotSur = '1 sem');
-                                        },
-                                        child: Text(
-                                          '1 sem',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    'Akzidenz Grotesk Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryColor,
-                                                useGoogleFonts: false,
-                                              ),
-                                        ),
-                                      ),
-                                    if ((FFAppState().spotSur) == '1 sem')
-                                      Text(
-                                        '1 sem',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              if ((FFAppState().spotSur) == '1 sem')
-                                Container(
-                                  width: 40,
-                                  height: 2,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 1,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                            child: Icon(
                               FFIcons.knorte,
                               color: Color(0xFF4099F7),
                               size: 48,
@@ -4785,7 +1717,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    '1/03',
+                                    '16/03',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -4873,7 +1805,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    '2/03',
+                                    '17/03',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -4961,7 +1893,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    '3/03',
+                                    '18/03',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -5049,7 +1981,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    '4/03',
+                                    '21/03',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -5137,7 +2069,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Hoy',
+                                    '22/03',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -5461,6 +2393,2854 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                                 ),
                               ),
                           ],
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(0),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                            child: Icon(
+                              FFIcons.ksubtract2,
+                              color: FlutterFlowTheme.of(context).primaryColor,
+                              size: 48,
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'SPOT',
+                                style: FlutterFlowTheme.of(context).title3,
+                              ),
+                              Text(
+                                'Promedio semanal: \$3',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Akzidenz Grotesk Pro',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryColor,
+                                      useGoogleFonts: false,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if ((FFAppState().spot) == 'Todo')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spot) == '1 año')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spot) == '6 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spot) == '3 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spot) == '1 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spot) == '1 sem')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 60,
+                                      constraints: BoxConstraints(
+                                        maxWidth:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                        shape: BoxShape.rectangle,
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '6.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '16/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 100,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.17',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '17/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 41,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.01',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '18/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.5',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '21/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 30,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '22/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != 'Todo')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(
+                                              () => FFAppState().spot = 'Todo');
+                                        },
+                                        child: Text(
+                                          'Todo',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == 'Todo')
+                                      Text(
+                                        'Todo',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spot) == 'Todo')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != '1 año')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spot = '1 año');
+                                        },
+                                        child: Text(
+                                          '1 año',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == '1 año')
+                                      Text(
+                                        '1 año',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spot) == '1 año')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != '6 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spot = '6 mes');
+                                        },
+                                        child: Text(
+                                          '6 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == '6 mes')
+                                      Text(
+                                        '6 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spot) == '6 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != '3 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spot = '3 mes');
+                                        },
+                                        child: Text(
+                                          '3 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == '3 mes')
+                                      Text(
+                                        '3 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spot) == '3 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: InkWell(
+                                  onTap: () async {
+                                    setState(() => FFAppState().spot = '1 mes');
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      if ((FFAppState().spot) != '1 mes')
+                                        InkWell(
+                                          onTap: () async {
+                                            setState(() =>
+                                                FFAppState().spot = '1 mes');
+                                          },
+                                          child: Text(
+                                            '1 mes',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      'Akzidenz Grotesk Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryColor,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
+                                        ),
+                                      if ((FFAppState().spot) == '1 mes')
+                                        Text(
+                                          '1 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              if ((FFAppState().spot) == '1 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != '1 sem')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spot = '1 sem');
+                                        },
+                                        child: Text(
+                                          '1 sem',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == '1 sem')
+                                      Text(
+                                        '1 sem',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spot) == '1 sem')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(0),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                            child: Icon(
+                              FFIcons.knorte,
+                              color: Color(0xFF4499E8),
+                              size: 48,
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'SPOT • Norte',
+                                style: FlutterFlowTheme.of(context).title3,
+                              ),
+                              Text(
+                                'Promedio semanal: \$3',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Akzidenz Grotesk Pro',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryColor,
+                                      useGoogleFonts: false,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if ((FFAppState().spotNorte) == 'Todo')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotNorte) == '1 año')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotNorte) == '6 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotNorte) == '3 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotNorte) == '1 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotNorte) == '1 sem')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 60,
+                                      constraints: BoxConstraints(
+                                        maxWidth:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                        shape: BoxShape.rectangle,
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '6.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '16/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 100,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.17',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '17/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 41,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.01',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '18/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.5',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '21/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 30,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '22/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spot) != 'Todo')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotNorte = 'Todo');
+                                        },
+                                        child: Text(
+                                          'Todo',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spot) == 'Todo')
+                                      Text(
+                                        'Todo',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == 'Todo')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotNorte) != '1 año')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotNorte = '1 año');
+                                        },
+                                        child: Text(
+                                          '1 año',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotNorte) == '1 año')
+                                      Text(
+                                        '1 año',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == '1 año')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotNorte) != '6 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotNorte = '6 mes');
+                                        },
+                                        child: Text(
+                                          '6 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotNorte) == '6 mes')
+                                      Text(
+                                        '6 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == '6 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotNorte) != '3 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotNorte = '3 mes');
+                                        },
+                                        child: Text(
+                                          '3 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotNorte) == '3 mes')
+                                      Text(
+                                        '3 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == '3 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: InkWell(
+                                  onTap: () async {
+                                    setState(() => FFAppState().spot = '1 mes');
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      if ((FFAppState().spotNorte) != '1 mes')
+                                        InkWell(
+                                          onTap: () async {
+                                            setState(() => FFAppState()
+                                                .spotNorte = '1 mes');
+                                          },
+                                          child: Text(
+                                            '1 mes',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      'Akzidenz Grotesk Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryColor,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
+                                        ),
+                                      if ((FFAppState().spotNorte) == '1 mes')
+                                        Text(
+                                          '1 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == '1 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotNorte) != '1 sem')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotNorte = '1 sem');
+                                        },
+                                        child: Text(
+                                          '1 sem',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotNorte) == '1 sem')
+                                      Text(
+                                        '1 sem',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotNorte) == '1 sem')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(0),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                            child: Icon(
+                              FFIcons.kcentro,
+                              color: FlutterFlowTheme.of(context).primaryColor,
+                              size: 48,
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'SPOT • Centro',
+                                style: FlutterFlowTheme.of(context).title3,
+                              ),
+                              Text(
+                                'Promedio semanal: \$3',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Akzidenz Grotesk Pro',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryColor,
+                                      useGoogleFonts: false,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if ((FFAppState().spotCentro) == 'Todo')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotCentro) == '1 año')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotCentro) == '6 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotCentro) == '3 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotCentro) == '1 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotCentro) == '1 sem')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 60,
+                                      constraints: BoxConstraints(
+                                        maxWidth:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                        shape: BoxShape.rectangle,
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '6.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '16/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 100,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.17',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '17/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 41,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.01',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '18/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.5',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '21/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 30,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '22/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotCentro) != 'Todo')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotCentro = 'Todo');
+                                        },
+                                        child: Text(
+                                          'Todo',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotCentro) == 'Todo')
+                                      Text(
+                                        'Todo',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == 'Todo')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotCentro) != '1 año')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() => FFAppState()
+                                              .spotCentro = '1 año');
+                                        },
+                                        child: Text(
+                                          '1 año',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotCentro) == '1 año')
+                                      Text(
+                                        '1 año',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == '1 año')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotCentro) != '6 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() => FFAppState()
+                                              .spotCentro = '6 mes');
+                                        },
+                                        child: Text(
+                                          '6 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotCentro) == '6 mes')
+                                      Text(
+                                        '6 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == '6 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotCentro) != '3 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() => FFAppState()
+                                              .spotCentro = '3 mes');
+                                        },
+                                        child: Text(
+                                          '3 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotCentro) == '3 mes')
+                                      Text(
+                                        '3 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == '3 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: InkWell(
+                                  onTap: () async {
+                                    setState(() => FFAppState().spot = '1 mes');
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      if ((FFAppState().spotCentro) != '1 mes')
+                                        InkWell(
+                                          onTap: () async {
+                                            setState(() => FFAppState()
+                                                .spotCentro = '1 mes');
+                                          },
+                                          child: Text(
+                                            '1 mes',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      'Akzidenz Grotesk Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryColor,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
+                                        ),
+                                      if ((FFAppState().spotCentro) == '1 mes')
+                                        Text(
+                                          '1 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == '1 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotCentro) != '1 sem')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() => FFAppState()
+                                              .spotCentro = '1 sem');
+                                        },
+                                        child: Text(
+                                          '1 sem',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotCentro) == '1 sem')
+                                      Text(
+                                        '1 sem',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotCentro) == '1 sem')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(0),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                            child: Icon(
+                              FFIcons.ksubtract11,
+                              color: Color(0xFFD95644),
+                              size: 48,
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'SPOT • Sur',
+                                style: FlutterFlowTheme.of(context).title3,
+                              ),
+                              Text(
+                                'Promedio semanal: \$3',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Akzidenz Grotesk Pro',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryColor,
+                                      useGoogleFonts: false,
+                                    ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if ((FFAppState().spotSur) == 'Todo')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotSur) == '1 año')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotSur) == '6 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotSur) == '3 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotSur) == '1 mes')
+                      custom_widgets.Chart(
+                        width: MediaQuery.of(context).size.width,
+                        height: 250,
+                      ),
+                    if ((FFAppState().spotSur) == '1 sem')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 60,
+                                      constraints: BoxConstraints(
+                                        maxWidth:
+                                            MediaQuery.of(context).size.width *
+                                                0.35,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                        shape: BoxShape.rectangle,
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '6.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '16/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 100,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.17',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '17/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 41,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '4.01',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '18/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.5',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '21/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 0, 4, 0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Container(
+                                      width: MediaQuery.of(context).size.width,
+                                      height: 30,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryColor,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0, 0, 0, 5),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Text(
+                                              '3.0',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            'Akzidenz Grotesk Pro',
+                                                        color: Colors.black,
+                                                        useGoogleFonts: false,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 6, 0, 0),
+                                      child: Text(
+                                        '22/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Color(0xFF858585),
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotSur) != 'Todo')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotSur = 'Todo');
+                                        },
+                                        child: Text(
+                                          'Todo',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotSur) == 'Todo')
+                                      Text(
+                                        'Todo',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == 'Todo')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotSur) != '1 año')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotSur = '1 año');
+                                        },
+                                        child: Text(
+                                          '1 año',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotSur) == '1 año')
+                                      Text(
+                                        '1 año',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == '1 año')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotSur) != '6 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotSur = '6 mes');
+                                        },
+                                        child: Text(
+                                          '6 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotSur) == '6 mes')
+                                      Text(
+                                        '6 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == '6 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotSur) != '3 mes')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotSur = '3 mes');
+                                        },
+                                        child: Text(
+                                          '3 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotSur) == '3 mes')
+                                      Text(
+                                        '3 mes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == '3 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: InkWell(
+                                  onTap: () async {
+                                    setState(() => FFAppState().spot = '1 mes');
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      if ((FFAppState().spotSur) != '1 mes')
+                                        InkWell(
+                                          onTap: () async {
+                                            setState(() =>
+                                                FFAppState().spotSur = '1 mes');
+                                          },
+                                          child: Text(
+                                            '1 mes',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      'Akzidenz Grotesk Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryColor,
+                                                  useGoogleFonts: false,
+                                                ),
+                                          ),
+                                        ),
+                                      if ((FFAppState().spotSur) == '1 mes')
+                                        Text(
+                                          '1 mes',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == '1 mes')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    if ((FFAppState().spotSur) != '1 sem')
+                                      InkWell(
+                                        onTap: () async {
+                                          setState(() =>
+                                              FFAppState().spotSur = '1 sem');
+                                        },
+                                        child: Text(
+                                          '1 sem',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText1
+                                              .override(
+                                                fontFamily:
+                                                    'Akzidenz Grotesk Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryColor,
+                                                useGoogleFonts: false,
+                                              ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().spotSur) == '1 sem')
+                                      Text(
+                                        '1 sem',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if ((FFAppState().spotSur) == '1 sem')
+                                Container(
+                                  width: 40,
+                                  height: 2,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

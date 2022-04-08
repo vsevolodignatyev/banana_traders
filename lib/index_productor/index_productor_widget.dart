@@ -342,9 +342,39 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                'SPOT',
-                                style: FlutterFlowTheme.of(context).title3,
+                              FutureBuilder<List<SpotRecord>>(
+                                future: querySpotRecordOnce(
+                                  singleRecord: true,
+                                ),
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: SizedBox(
+                                        width: 50,
+                                        height: 50,
+                                        child: CircularProgressIndicator(
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryColor,
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                  List<SpotRecord> textSpotRecordList =
+                                      snapshot.data;
+                                  // Return an empty Container when the document does not exist.
+                                  if (snapshot.data.isEmpty) {
+                                    return Container();
+                                  }
+                                  final textSpotRecord =
+                                      textSpotRecordList.isNotEmpty
+                                          ? textSpotRecordList.first
+                                          : null;
+                                  return Text(
+                                    'SPOT',
+                                    style: FlutterFlowTheme.of(context).title3,
+                                  );
+                                },
                               ),
                               Text(
                                 'Promedio semanal: \$3',
@@ -363,11 +393,11 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       ),
                     ),
                     if ((FFAppState().spot) == 'Todo')
-                      StreamBuilder<List<SpotRecord>>(
-                        stream: querySpotRecord(
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
                               spotRecord.orderBy('Date', descending: true),
-                          limit: 7,
+                          limit: 30,
                         ),
                         builder: (context, snapshot) {
                           // Customize what your widget looks like when it's loading.
@@ -387,17 +417,6 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                           return custom_widgets.Chart(
                             width: MediaQuery.of(context).size.width,
                             height: 250,
-                            gradientColor1:
-                                FlutterFlowTheme.of(context).primaryColor,
-                            gradientColor2:
-                                FlutterFlowTheme.of(context).secondaryColor,
-                            minY: 0.0,
-                            maxY: 6.0,
-                            verticalLineColor: Colors.black,
-                            horizontalLineColor: Colors.black,
-                            backgroundColor: Colors.white,
-                            bottomTitlesColor: Color(0xFF858585),
-                            leftTitlesColor: Color(0xFF858585),
                             values:
                                 chartSpotRecordList.map((e) => e.spot).toList(),
                             bottomTitles: chartSpotRecordList
@@ -407,68 +426,136 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                         },
                       ),
                     if ((FFAppState().spot) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values:
+                                chartSpotRecordList.map((e) => e.spot).toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spot) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values:
+                                chartSpotRecordList.map((e) => e.spot).toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spot) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values:
+                                chartSpotRecordList.map((e) => e.spot).toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spot) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values:
+                                chartSpotRecordList.map((e) => e.spot).toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spot) == '1 sem')
                       Padding(
@@ -1121,81 +1208,26 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotNorte) == '1 año')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotNorte) == '6 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotNorte) == '3 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotNorte) == '1 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotNorte) == '1 sem')
                       Padding(
@@ -1888,81 +1920,26 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotCentro) == '1 año')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotCentro) == '6 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotCentro) == '3 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotCentro) == '1 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotCentro) == '1 sem')
                       Padding(
@@ -2655,81 +2632,26 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotSur) == '1 año')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotSur) == '6 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotSur) == '3 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotSur) == '1 mes')
                       custom_widgets.Chart(
                         width: MediaQuery.of(context).size.width,
                         height: 250,
-                        gradientColor1:
-                            FlutterFlowTheme.of(context).primaryColor,
-                        gradientColor2:
-                            FlutterFlowTheme.of(context).secondaryColor,
-                        minY: 0.0,
-                        maxY: 6.0,
-                        verticalLineColor: Colors.black,
-                        horizontalLineColor: Colors.black,
-                        backgroundColor: Colors.white,
-                        bottomTitlesColor: Color(0xFF858585),
-                        leftTitlesColor: Color(0xFF858585),
                       ),
                     if ((FFAppState().spotSur) == '1 sem')
                       Padding(

@@ -19,34 +19,12 @@ class Chart extends StatefulWidget {
     Key key,
     this.width,
     this.height,
-    this.gradientColor1,
-    this.gradientColor2,
-    this.minX,
-    this.minY,
-    this.maxX,
-    this.maxY,
-    this.verticalLineColor,
-    this.horizontalLineColor,
-    this.backgroundColor,
-    this.bottomTitlesColor,
-    this.leftTitlesColor,
     this.values,
     this.bottomTitles,
   }) : super(key: key);
 
   final double width;
   final double height;
-  final Color gradientColor1;
-  final Color gradientColor2;
-  final double minX;
-  final double minY;
-  final double maxX;
-  final double maxY;
-  final Color verticalLineColor;
-  final Color horizontalLineColor;
-  final Color backgroundColor;
-  final Color bottomTitlesColor;
-  final Color leftTitlesColor;
   final List<double> values;
   final List<String> bottomTitles;
 
@@ -66,7 +44,7 @@ class _ChartState extends State<Chart> {
                 borderRadius: BorderRadius.all(
                   Radius.circular(0),
                 ),
-                color: widget.backgroundColor),
+                color: Colors.white),
             child: Padding(
               padding: const EdgeInsets.only(
                   right: 16.0, left: 16.0, top: 16, bottom: 16),
@@ -82,8 +60,8 @@ class _ChartState extends State<Chart> {
 
   LineChartData mainData() {
     List<Color> gradientColors = [
-      widget.gradientColor1,
-      widget.gradientColor2,
+      const Color(0xff6EA80F),
+      const Color(0xffB6D365),
     ];
     return LineChartData(
       gridData: FlGridData(
@@ -91,13 +69,13 @@ class _ChartState extends State<Chart> {
         drawVerticalLine: true,
         getDrawingHorizontalLine: (value) {
           return FlLine(
-            color: widget.horizontalLineColor,
+            color: Colors.black,
             strokeWidth: 0,
           );
         },
         getDrawingVerticalLine: (value) {
           return FlLine(
-            color: widget.verticalLineColor,
+            color: Colors.black,
             strokeWidth: 0,
           );
         },
@@ -112,7 +90,7 @@ class _ChartState extends State<Chart> {
           reservedSize: 22,
           interval: 1,
           getTextStyles: (context, value) =>
-              TextStyle(color: widget.bottomTitlesColor, fontSize: 12),
+              TextStyle(color: const Color(0xFF858585), fontSize: 8),
           getTitles: (value) => widget.bottomTitles[value.toInt()],
           margin: 8,
         ),
@@ -120,10 +98,10 @@ class _ChartState extends State<Chart> {
       borderData: FlBorderData(
           show: false,
           border: Border.all(color: const Color(0xff37434d), width: 1)),
-      minX: widget.minX,
-      maxX: widget.maxX,
-      minY: widget.minY,
-      maxY: widget.maxY,
+      minX: null,
+      maxX: null,
+      minY: 0,
+      maxY: 10,
       lineBarsData: [
         LineChartBarData(
           spots: widget.values.asMap().entries.map((e) {
