@@ -1205,29 +1205,174 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       ),
                     ),
                     if ((FFAppState().spotNorte) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotNorte)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotNorte) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotNorte)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotNorte) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotNorte)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotNorte) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotNorte)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotNorte) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotNorte)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotNorte) == '1 sem')
                       Padding(
