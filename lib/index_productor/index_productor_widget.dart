@@ -342,39 +342,9 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              FutureBuilder<List<SpotRecord>>(
-                                future: querySpotRecordOnce(
-                                  singleRecord: true,
-                                ),
-                                builder: (context, snapshot) {
-                                  // Customize what your widget looks like when it's loading.
-                                  if (!snapshot.hasData) {
-                                    return Center(
-                                      child: SizedBox(
-                                        width: 50,
-                                        height: 50,
-                                        child: CircularProgressIndicator(
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryColor,
-                                        ),
-                                      ),
-                                    );
-                                  }
-                                  List<SpotRecord> textSpotRecordList =
-                                      snapshot.data;
-                                  // Return an empty Container when the document does not exist.
-                                  if (snapshot.data.isEmpty) {
-                                    return Container();
-                                  }
-                                  final textSpotRecord =
-                                      textSpotRecordList.isNotEmpty
-                                          ? textSpotRecordList.first
-                                          : null;
-                                  return Text(
-                                    'SPOT',
-                                    style: FlutterFlowTheme.of(context).title3,
-                                  );
-                                },
+                              Text(
+                                'SPOT',
+                                style: FlutterFlowTheme.of(context).title3,
                               ),
                               Text(
                                 'Promedio semanal: \$3',
