@@ -31,6 +31,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale _locale;
   ThemeMode _themeMode = ThemeMode.system;
+  bool displaySplashImage = true;
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(
+        Duration(seconds: 1), () => setState(() => displaySplashImage = false));
+  }
 
   void setLocale(Locale value) => setState(() => _locale = value);
   void setThemeMode(ThemeMode mode) => setState(() {
@@ -51,7 +59,17 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: const [Locale('en', '')],
       theme: ThemeData(brightness: Brightness.light),
       themeMode: _themeMode,
-      home: IndexWidget(),
+      home: displaySplashImage
+          ? Container(
+              color: Colors.transparent,
+              child: Builder(
+                builder: (context) => Image.asset(
+                  'assets/images/Frame_1.png',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            )
+          : IndexWidget(),
     );
   }
 }
