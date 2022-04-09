@@ -2,7 +2,6 @@ import '../cambios/cambios_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
-import '../index_ru/index_ru_widget.dart';
 import '../tariffs/tariffs_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -79,25 +78,15 @@ class _IndexWidgetState extends State<IndexWidget> {
                                 ),
                               ],
                             ),
-                            InkWell(
-                              onTap: () async {
-                                await Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => IndexRuWidget(),
+                            Text(
+                              'RU',
+                              style: FlutterFlowTheme.of(context)
+                                  .subtitle2
+                                  .override(
+                                    fontFamily: 'Akzidenz Grotesk Pro',
+                                    color: Colors.white,
+                                    useGoogleFonts: false,
                                   ),
-                                );
-                              },
-                              child: Text(
-                                'RU',
-                                style: FlutterFlowTheme.of(context)
-                                    .subtitle2
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: Colors.white,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
                             ),
                           ],
                         ),
