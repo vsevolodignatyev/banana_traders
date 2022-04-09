@@ -91,7 +91,7 @@ class _ChartState extends State<Chart> {
           interval: 1,
           getTextStyles: (context, value) =>
               TextStyle(color: const Color(0xFF858585), fontSize: 8),
-          getTitles: (value) => widget.bottomTitles[value.toInt()],
+          getTitles: (value) => (value % 2 == 0) ? null : widget.bottomTitles[value.toInt()],
           margin: 8,
         ),
       ),
