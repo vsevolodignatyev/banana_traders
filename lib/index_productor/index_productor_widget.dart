@@ -2,7 +2,6 @@ import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
-import '../index_ru/index_ru_widget.dart';
 import '../tariffs/tariffs_widget.dart';
 import '../custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
@@ -80,25 +79,15 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 ),
                               ],
                             ),
-                            InkWell(
-                              onTap: () async {
-                                await Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => IndexRuWidget(),
+                            Text(
+                              'RU',
+                              style: FlutterFlowTheme.of(context)
+                                  .subtitle2
+                                  .override(
+                                    fontFamily: 'Akzidenz Grotesk Pro',
+                                    color: Colors.white,
+                                    useGoogleFonts: false,
                                   ),
-                                );
-                              },
-                              child: Text(
-                                'RU',
-                                style: FlutterFlowTheme.of(context)
-                                    .subtitle2
-                                    .override(
-                                      fontFamily: 'Akzidenz Grotesk Pro',
-                                      color: Colors.white,
-                                      useGoogleFonts: false,
-                                    ),
-                              ),
                             ),
                           ],
                         ),
@@ -134,7 +123,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 2),
                                       child: Text(
-                                        '3',
+                                        '2',
                                         style: FlutterFlowTheme.of(context)
                                             .title1
                                             .override(
@@ -149,7 +138,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 12, 0, 0),
                                       child: Text(
-                                        '.00',
+                                        '.70',
                                         style: FlutterFlowTheme.of(context)
                                             .title2
                                             .override(
@@ -194,7 +183,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                           ),
                                     ),
                                     Text(
-                                      '05/03',
+                                      '22/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -347,7 +336,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 style: FlutterFlowTheme.of(context).title3,
                               ),
                               Text(
-                                'Promedio semanal: \$3',
+                                'Promedio semanal: \$1.99',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
                                     .override(
@@ -547,7 +536,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 5),
                                       child: Text(
-                                        '4.01',
+                                        '1.99',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -560,7 +549,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 60,
+                                      height: 19.9,
                                       constraints: BoxConstraints(
                                         maxWidth:
                                             MediaQuery.of(context).size.width *
@@ -577,7 +566,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '1/03',
+                                        '16/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -603,7 +592,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 5),
                                       child: Text(
-                                        '4.17',
+                                        '1.99',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -616,7 +605,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 100,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
@@ -627,7 +616,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '2/03',
+                                        '17/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -653,7 +642,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 5),
                                       child: Text(
-                                        '4.01',
+                                        '1.99',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -666,7 +655,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 41,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
@@ -677,7 +666,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '3/03',
+                                        '18/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -703,7 +692,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 5),
                                       child: Text(
-                                        '3.5',
+                                        '0',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -716,7 +705,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 35,
+                                      height: 1,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
@@ -727,7 +716,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '4/03',
+                                        '21/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -753,7 +742,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 5),
                                       child: Text(
-                                        '3.0',
+                                        '2.7',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -777,7 +766,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '5/03',
+                                        '22/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -1159,7 +1148,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 style: FlutterFlowTheme.of(context).title3,
                               ),
                               Text(
-                                'Promedio semanal: \$3',
+                                'Promedio semanal: \$1.99',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
                                     .override(
@@ -1360,9 +1349,24 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 60,
+                                      height: 19.9,
                                       constraints: BoxConstraints(
                                         maxWidth:
                                             MediaQuery.of(context).size.width *
@@ -1374,35 +1378,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                         borderRadius: BorderRadius.circular(4),
                                         shape: BoxShape.rectangle,
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '1/03',
+                                        '16/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -1424,43 +1405,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 100,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '2/03',
+                                        '17/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -1482,43 +1455,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 41,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '3/03',
+                                        '18/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -1540,43 +1505,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '0',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 35,
+                                      height: 1,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '4/03',
+                                        '21/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -1598,6 +1555,21 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '2.7',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
                                       height: 30,
@@ -1606,35 +1578,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '5/03',
+                                        '22/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2016,7 +1965,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 style: FlutterFlowTheme.of(context).title3,
                               ),
                               Text(
-                                'Promedio semanal: \$3',
+                                'Promedio semanal: \$1.99',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
                                     .override(
@@ -2032,29 +1981,174 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                       ),
                     ),
                     if ((FFAppState().spotCentro) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date'),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotCentro)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotCentro) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date'),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotCentro)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotCentro) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotCentro)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotCentro) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotCentro)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('Md', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotCentro) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) => spotRecord
+                              .orderBy('spotCentro', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotCentro)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     if ((FFAppState().spotCentro) == '1 sem')
                       Padding(
@@ -2072,9 +2166,24 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 60,
+                                      height: 19.9,
                                       constraints: BoxConstraints(
                                         maxWidth:
                                             MediaQuery.of(context).size.width *
@@ -2086,35 +2195,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                         borderRadius: BorderRadius.circular(4),
                                         shape: BoxShape.rectangle,
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '1/03',
+                                        '16/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2136,43 +2222,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 100,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '2/03',
+                                        '17/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2194,43 +2272,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 41,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '3/03',
+                                        '18/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2252,43 +2322,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '0',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 35,
+                                      height: 1,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '4/03',
+                                        '21/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2310,6 +2372,21 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '2.7',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
                                       height: 30,
@@ -2318,35 +2395,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '5/03',
+                                        '22/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2728,7 +2782,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 style: FlutterFlowTheme.of(context).title3,
                               ),
                               Text(
-                                'Promedio semanal: \$3',
+                                'Promedio semanal: \$1.99',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
                                     .override(
@@ -2743,31 +2797,6 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                         ],
                       ),
                     ),
-                    if ((FFAppState().spotSur) == 'Todo')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                      ),
-                    if ((FFAppState().spotSur) == '1 año')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                      ),
-                    if ((FFAppState().spotSur) == '6 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                      ),
-                    if ((FFAppState().spotSur) == '3 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                      ),
-                    if ((FFAppState().spotSur) == '1 mes')
-                      custom_widgets.Chart(
-                        width: MediaQuery.of(context).size.width,
-                        height: 250,
-                      ),
                     if ((FFAppState().spotSur) == '1 sem')
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 20),
@@ -2784,9 +2813,24 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 60,
+                                      height: 19.9,
                                       constraints: BoxConstraints(
                                         maxWidth:
                                             MediaQuery.of(context).size.width *
@@ -2798,35 +2842,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                         borderRadius: BorderRadius.circular(4),
                                         shape: BoxShape.rectangle,
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '6.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '1/03',
+                                        '16/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2848,43 +2869,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 100,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.17',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '2/03',
+                                        '17/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2906,43 +2919,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '1.99',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 41,
+                                      height: 19.9,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '4.01',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '3/03',
+                                        '18/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -2964,43 +2969,35 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '0',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 35,
+                                      height: 1,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.5',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '4/03',
+                                        '21/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -3022,6 +3019,21 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 0, 0, 5),
+                                      child: Text(
+                                        '2.7',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color: Colors.black,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                     Container(
                                       width: MediaQuery.of(context).size.width,
                                       height: 30,
@@ -3030,35 +3042,12 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                             .secondaryColor,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 0, 0, 5),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text(
-                                              '3.0',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            'Akzidenz Grotesk Pro',
-                                                        color: Colors.black,
-                                                        useGoogleFonts: false,
-                                                      ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 6, 0, 0),
                                       child: Text(
-                                        '5/03',
+                                        '22/03',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText2
                                             .override(
@@ -3075,6 +3064,176 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                             ),
                           ],
                         ),
+                      ),
+                    if ((FFAppState().spotSur) == 'Todo')
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotSur)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
+                      ),
+                    if ((FFAppState().spotSur) == '1 año')
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotSur)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
+                      ),
+                    if ((FFAppState().spotSur) == '6 mes')
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotSur)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
+                      ),
+                    if ((FFAppState().spotSur) == '3 mes')
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotSur)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
+                      ),
+                    if ((FFAppState().spotSur) == '1 mes')
+                      FutureBuilder<List<SpotRecord>>(
+                        future: querySpotRecordOnce(
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('Date', descending: true),
+                          limit: 30,
+                        ),
+                        builder: (context, snapshot) {
+                          // Customize what your widget looks like when it's loading.
+                          if (!snapshot.hasData) {
+                            return Center(
+                              child: SizedBox(
+                                width: 50,
+                                height: 50,
+                                child: CircularProgressIndicator(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                ),
+                              ),
+                            );
+                          }
+                          List<SpotRecord> chartSpotRecordList = snapshot.data;
+                          return custom_widgets.Chart(
+                            width: MediaQuery.of(context).size.width,
+                            height: 250,
+                            values: chartSpotRecordList
+                                .map((e) => e.spotSur)
+                                .toList(),
+                            bottomTitles: chartSpotRecordList
+                                .map((e) => dateTimeFormat('d/M', e.date))
+                                .toList(),
+                          );
+                        },
                       ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
@@ -3499,7 +3658,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '1/03',
+                                  '16/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -3510,7 +3669,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3521,7 +3680,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3541,7 +3700,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '2/03',
+                                  '17/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -3552,7 +3711,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3563,7 +3722,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3583,7 +3742,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '3/03',
+                                  '18/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -3594,7 +3753,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3605,7 +3764,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3625,7 +3784,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '4/03',
+                                  '21/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -3636,7 +3795,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3647,7 +3806,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3667,7 +3826,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  'Hoy',
+                                  '22/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -3678,7 +3837,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.5',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3689,7 +3848,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3721,7 +3880,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.58',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3733,7 +3892,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.2',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -3779,7 +3938,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '14/02 - 18/02',
+                                      '3/03 - 8/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -3820,7 +3979,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '21/02 - 26/02',
+                                      '9/03 - 15/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -3846,7 +4005,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    '01/03 - 05/03',
+                                    '16/03 - 22/03',
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                   ),
@@ -3897,7 +4056,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                   );
                                 },
-                                text: 'Ver 12 productores del norte mas',
+                                text: 'Ver 21 productores del norte mas',
                                 options: FFButtonOptions(
                                   width: 130,
                                   height: 35,
@@ -4028,7 +4187,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '1/03',
+                                  '16/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4039,7 +4198,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4050,7 +4209,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4070,7 +4229,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '2/03',
+                                  '17/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4081,7 +4240,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4092,7 +4251,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4112,7 +4271,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '3/03',
+                                  '18/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4123,7 +4282,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4134,7 +4293,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4154,7 +4313,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '4/03',
+                                  '21/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4165,7 +4324,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4176,7 +4335,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4196,7 +4355,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  'Hoy',
+                                  '22/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4207,7 +4366,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.5',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4218,7 +4377,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4250,7 +4409,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.58',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4262,7 +4421,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.2',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4308,7 +4467,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '14/02 - 18/02',
+                                      '3/03 - 8/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -4349,7 +4508,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '21/02 - 26/02',
+                                      '9/03 - 15/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -4375,7 +4534,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    '01/03 - 05/03',
+                                    '16/03 - 22/03',
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                   ),
@@ -4426,7 +4585,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                   );
                                 },
-                                text: 'Ver 12 productores del centro mas',
+                                text: 'Ver 21 productores del centro mas',
                                 options: FFButtonOptions(
                                   width: 130,
                                   height: 35,
@@ -4557,7 +4716,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '1/03',
+                                  '16/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4568,7 +4727,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4579,7 +4738,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4599,7 +4758,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '2/03',
+                                  '17/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4610,7 +4769,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4621,7 +4780,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4641,7 +4800,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '3/03',
+                                  '18/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4652,7 +4811,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.8',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4663,7 +4822,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4683,7 +4842,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  '4/03',
+                                  '21/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4694,7 +4853,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4705,7 +4864,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4725,7 +4884,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  'Hoy',
+                                  '22/03',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -4736,7 +4895,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '2.5',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4747,7 +4906,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '0.0',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4779,7 +4938,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.58',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4791,7 +4950,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  '3.0',
+                                  '1.2',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -4837,7 +4996,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '14/02 - 18/02',
+                                      '3/03 - 8/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -4878,7 +5037,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                       size: 11,
                                     ),
                                     Text(
-                                      '21/02 - 26/02',
+                                      '9/03 - 15/03',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
@@ -4904,7 +5063,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    '01/03 - 05/03',
+                                    '16/03 - 22/03',
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                   ),
@@ -4955,7 +5114,7 @@ class _IndexProductorWidgetState extends State<IndexProductorWidget> {
                                     ),
                                   );
                                 },
-                                text: 'Ver 12 productores del norte mas',
+                                text: 'Ver 21 productores del norte mas',
                                 options: FFButtonOptions(
                                   width: 130,
                                   height: 35,
