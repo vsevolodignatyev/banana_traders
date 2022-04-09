@@ -1,7 +1,6 @@
 import 'package:built_value/standard_json_plugin.dart';
 
 import 'spot_record.dart';
-import 'centro_norte_record.dart';
 
 import 'index.dart';
 
@@ -13,7 +12,6 @@ const kDocumentReferenceField = 'Document__Reference__Field';
 
 @SerializersFor(const [
   SpotRecord,
-  CentroNorteRecord,
 ])
 final Serializers serializers = (_$serializers.toBuilder()
       ..add(DocumentReferenceSerializer())
