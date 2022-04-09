@@ -355,7 +355,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -388,7 +388,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -421,7 +421,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -454,7 +454,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -487,7 +487,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -1167,7 +1167,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -1201,7 +1201,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -1235,7 +1235,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -1269,7 +1269,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -1303,7 +1303,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -2052,7 +2052,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -2086,7 +2086,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -2119,8 +2119,8 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                     if ((FFAppState().spotCentro) == '1 mes')
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
-                          queryBuilder: (spotRecord) => spotRecord
-                              .orderBy('spotCentro', descending: true),
+                          queryBuilder: (spotRecord) =>
+                              spotRecord.orderBy('spotCentro'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -3069,7 +3069,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -3103,7 +3103,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -3137,7 +3137,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -3171,7 +3171,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
@@ -3205,7 +3205,7 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                       FutureBuilder<List<SpotRecord>>(
                         future: querySpotRecordOnce(
                           queryBuilder: (spotRecord) =>
-                              spotRecord.orderBy('Date', descending: true),
+                              spotRecord.orderBy('Date'),
                           limit: 30,
                         ),
                         builder: (context, snapshot) {
