@@ -331,2103 +331,6 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
                             child: Icon(
-                              FFIcons.knorte,
-                              color: Color(0xFF4099F7),
-                              size: 48,
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Compra • Norte',
-                                style: FlutterFlowTheme.of(context).title3,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    if ((FFAppState().CompraNorte) == '3')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Fabricante',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'EXCELBAN',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PALMAR',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PRIMADONNA',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'FAZENDA ',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'BLACIO',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '14/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '15/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '16/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '17/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '18/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    if ((FFAppState().CompraNorte) == '2')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Fabricante',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'EXCELBAN',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PALMAR',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PRIMADONNA',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'FAZENDA ',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'BLACIO',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '22/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '23/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '24/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '25/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '26/02',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    if ((FFAppState().CompraNorte) == '1')
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Fabricante',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'EXCELBAN',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PALMAR',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'PRIMADONNA',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'FAZENDA ',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'BLACIO',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '16/03',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '17/03',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '18/03',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '21/03',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    '22/03',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Color(0xFF858585),
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'AVG',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                  Text(
-                                    '3.0',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Akzidenz Grotesk Pro',
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                          useGoogleFonts: false,
-                                          lineHeight: 1.9,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if ((FFAppState().CompraNorte) != '3')
-                                    InkWell(
-                                      onTap: () async {
-                                        setState(() =>
-                                            FFAppState().CompraNorte = '3');
-                                      },
-                                      child: Text(
-                                        '14/02 - 18/02',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryColor,
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  if ((FFAppState().CompraNorte) == '3')
-                                    Text(
-                                      '14/02 - 18/02',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
-                                    ),
-                                ],
-                              ),
-                            ),
-                            if ((FFAppState().CompraNorte) == '3')
-                              Container(
-                                width: 90,
-                                height: 2,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                ),
-                              ),
-                          ],
-                        ),
-                        Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if ((FFAppState().CompraNorte) != '2')
-                                    InkWell(
-                                      onTap: () async {
-                                        setState(() =>
-                                            FFAppState().CompraNorte = '2');
-                                      },
-                                      child: Text(
-                                        '21/02 - 26/02',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryColor,
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  if ((FFAppState().CompraNorte) == '2')
-                                    Text(
-                                      '21/02 - 26/02',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
-                                    ),
-                                ],
-                              ),
-                            ),
-                            if ((FFAppState().CompraNorte) == '2')
-                              Container(
-                                width: 90,
-                                height: 2,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                ),
-                              ),
-                          ],
-                        ),
-                        Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if ((FFAppState().CompraNorte) != '1')
-                                    InkWell(
-                                      onTap: () async {
-                                        setState(() =>
-                                            FFAppState().CompraNorte = '1');
-                                      },
-                                      child: Text(
-                                        '01/03 - 05/03',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily:
-                                                  'Akzidenz Grotesk Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryColor,
-                                              useGoogleFonts: false,
-                                            ),
-                                      ),
-                                    ),
-                                  if ((FFAppState().CompraNorte) == '1')
-                                    Text(
-                                      '01/03 - 05/03',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
-                                    ),
-                                ],
-                              ),
-                            ),
-                            if ((FFAppState().CompraNorte) == '1')
-                              Container(
-                                width: 90,
-                                height: 2,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                ),
-                              ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 1,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(0),
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                            child: Icon(
                               FFIcons.ksubtract2,
                               color: FlutterFlowTheme.of(context).primaryColor,
                               size: 48,
@@ -5932,6 +3835,2103 @@ class _IndexTraderWidgetState extends State<IndexTraderWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
+                                  if ((FFAppState().CompraNorte) == '1')
+                                    Text(
+                                      '01/03 - 05/03',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1,
+                                    ),
+                                ],
+                              ),
+                            ),
+                            if ((FFAppState().CompraNorte) == '1')
+                              Container(
+                                width: 90,
+                                height: 2,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                ),
+                              ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 1,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 18, 0, 18),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(0),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 28),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                            child: Icon(
+                              FFIcons.knorte,
+                              color: Color(0xFF4099F7),
+                              size: 48,
+                            ),
+                          ),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Compra • Norte',
+                                style: FlutterFlowTheme.of(context).title3,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if ((FFAppState().CompraNorte) == '3')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Fabricante',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'EXCELBAN',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PALMAR',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PRIMADONNA',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'FAZENDA ',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'BLACIO',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '14/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '15/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '16/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '17/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '18/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    if ((FFAppState().CompraNorte) == '2')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Fabricante',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'EXCELBAN',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PALMAR',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PRIMADONNA',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'FAZENDA ',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'BLACIO',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '22/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '23/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '24/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '25/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '26/02',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    if ((FFAppState().CompraNorte) == '1')
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Fabricante',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'EXCELBAN',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PALMAR',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'PRIMADONNA',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'FAZENDA ',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'BLACIO',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '16/03',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '17/03',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '18/03',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '21/03',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '22/03',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Color(0xFF858585),
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(2, 0, 2, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'AVG',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText2
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                  Text(
+                                    '3.0',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Akzidenz Grotesk Pro',
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          useGoogleFonts: false,
+                                          lineHeight: 1.9,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  if ((FFAppState().CompraNorte) != '3')
+                                    InkWell(
+                                      onTap: () async {
+                                        setState(() =>
+                                            FFAppState().CompraNorte = '3');
+                                      },
+                                      child: Text(
+                                        '14/02 - 18/02',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  if ((FFAppState().CompraNorte) == '3')
+                                    Text(
+                                      '14/02 - 18/02',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1,
+                                    ),
+                                ],
+                              ),
+                            ),
+                            if ((FFAppState().CompraNorte) == '3')
+                              Container(
+                                width: 90,
+                                height: 2,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                ),
+                              ),
+                          ],
+                        ),
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  if ((FFAppState().CompraNorte) != '2')
+                                    InkWell(
+                                      onTap: () async {
+                                        setState(() =>
+                                            FFAppState().CompraNorte = '2');
+                                      },
+                                      child: Text(
+                                        '21/02 - 26/02',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
+                                  if ((FFAppState().CompraNorte) == '2')
+                                    Text(
+                                      '21/02 - 26/02',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1,
+                                    ),
+                                ],
+                              ),
+                            ),
+                            if ((FFAppState().CompraNorte) == '2')
+                              Container(
+                                width: 90,
+                                height: 2,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                ),
+                              ),
+                          ],
+                        ),
+                        Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  if ((FFAppState().CompraNorte) != '1')
+                                    InkWell(
+                                      onTap: () async {
+                                        setState(() =>
+                                            FFAppState().CompraNorte = '1');
+                                      },
+                                      child: Text(
+                                        '01/03 - 05/03',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily:
+                                                  'Akzidenz Grotesk Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryColor,
+                                              useGoogleFonts: false,
+                                            ),
+                                      ),
+                                    ),
                                   if ((FFAppState().CompraNorte) == '1')
                                     Text(
                                       '01/03 - 05/03',

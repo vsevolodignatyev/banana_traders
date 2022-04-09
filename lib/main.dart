@@ -61,11 +61,15 @@ class _MyAppState extends State<MyApp> {
       themeMode: _themeMode,
       home: displaySplashImage
           ? Container(
-              color: Colors.transparent,
-              child: Builder(
-                builder: (context) => Image.asset(
-                  'assets/images/Frame_1_(4).png',
-                  fit: BoxFit.cover,
+              color: Colors.white,
+              child: Center(
+                child: Builder(
+                  builder: (context) => Image.asset(
+                    'assets/images/Frame_1_(4).png',
+                    width: double.infinity,
+                    height: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             )
